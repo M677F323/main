@@ -24,5 +24,3 @@ with open("students2.csv") as file:
 # Sort and print the students
 for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['home']}")
-#this using DictReader and we can change it if we change colum also it works accordings to the csv file
-house
