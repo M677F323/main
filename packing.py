@@ -16,3 +16,7 @@ coins = {"galleons":100,"sickels":50,"knuts":25}
 #print(total(coins["galleons"],coins["sickles"],coins["knuts"]))
 print(total(**coins))
 
+#unpacking **************
+#coins=[100,50,25]
+
+#print(total(galleons =100,sickels = 50 ,knuts = 25))
