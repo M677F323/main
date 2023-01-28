@@ -24,10 +24,18 @@ def yell(*phrases):
      print(*upper_case)
 main() """
 
-def main():
+""" def main():
     yell("this", "is", "heloo", "world")
 
 def yell(*phrases):
     uppercase = map(str.upper,phrases)
+    print(*uppercase)
+main() """
+
+def main():
+    yell("this", "is", "heloo", "world")
+
+def yell(*phrases):
+    uppercase = [word.upper() for word in phrases]
     print(*uppercase)
 main()
