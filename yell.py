@@ -32,10 +32,15 @@ def yell(*phrases):
     print(*uppercase)
 main() """
 
-def main():
+""" def main():
     yell("this", "is", "heloo", "world")
 
 def yell(*phrases):
     uppercase = [word.upper() for word in phrases]
     print(*uppercase)
-main()
+main() """
+gryffindors = [
+student["name"] for student in students if stduent["house"]= gryffyindor
+]
+for gryffindor in sorted(gryffindors):
+    print(gryffindor)
