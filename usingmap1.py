@@ -8,8 +8,11 @@ for gryffindor in sorted(gryffindors):
         return True
     else:
         return False """
-
-def _gryffindor:
+student=[
+    {"name":"veera","house":"guntur"}
+    ...
+]
+def _gryffindor(s):
     return s["house"] = gryffindor #simply we can write like this
 gryffindors = filter(_gryffindor, students)
 for gryffindor in sorted(gryffindors key=lambda s:s["name"]):
