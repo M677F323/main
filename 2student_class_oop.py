@@ -1,5 +1,6 @@
 class Student:
     ...
+    #this mean we can implement later
 
 def main():
     student = get_student()
@@ -10,3 +11,6 @@ def get_student():
     student.name = input("Name: ")
     student.house = input("House: ")
     return student
+# __ this is dunder
+if __name__ == "__main__":
+    main()
