@@ -21,7 +21,11 @@ if __name__ == "__main__":
 class Student:
     ...
     #this mean we can implement later
-    def __init__(self,name,house):
+    def __init__(self,name,house,phn=None):
+        if not name:
+            raise ValueError("Missing Name")
+        if house not in ["guntur","vijaywada","banglore","Texas"]:
+            raise ValueError("Invalid House")
         self.name = name
         self.house = house
 def main():
@@ -31,7 +35,7 @@ def get_student():
     name = input("Name :")
     house = input("House: ")
     #student = Student(name,house)
-    @return student
+    #return student
     return Student(name,house)
 if __name__ == "__main__":
     main()    
