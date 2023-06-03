@@ -17,7 +17,7 @@ if __name__ == "__main__":
      """
 
 
-
+# check with the user value but if empty italso create object
 class Student:
     ...
     #this mean we can implement later
@@ -30,7 +30,8 @@ def main():
 def get_student():
     name = input("Name :")
     house = input("House: ")
-    student = Student(name,house)
-    return student
+    #student = Student(name,house)
+    @return student
+    return Student(name,house)
 if __name__ == "__main__":
     main()    
