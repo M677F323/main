@@ -116,10 +116,11 @@ class Student:
         self.house = house
     def __str__(self):
         return f"{self.name} from {self.house}"
-    
+    #getter function only self
     @property
     def house(self):
         return self._house
+    #setter function self,house as input and set house
     @house.setter
     def house(self,house):
         if house not in ["guntur","vijaywada","banglore","Texas"]:
