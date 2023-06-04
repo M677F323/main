@@ -119,6 +119,7 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
     #getter function only self
+    #This is for house
     @property
     def house(self):
         return self._house
@@ -129,6 +130,14 @@ class Student:
             raise ValueError("Invalid housename")
         self._house = house
 
+    @property
+    def name(self):
+        return self._name
+    @namesetter
+    def name(self,name):
+        if not name:
+            return ValueError("Invalid Name")
+        return self._name
 def main():
     student = get_student()
     #student.house = "kan"
