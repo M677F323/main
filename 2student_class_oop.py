@@ -108,12 +108,14 @@ if __name__ == "__main__":
 
 
 #back to normal
+#use of getter and setter class is if you are trying to change it will pass only from the setter function and it filter it
 class Student:
     def __init__(self,name,house):
         if not name:
             raise ValueError("Missing Name")
         self.name = name
         self.house = house
+        #if I you self,_house then it will not go to the setter function
     def __str__(self):
         return f"{self.name} from {self.house}"
     #getter function only self
