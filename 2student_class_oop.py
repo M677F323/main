@@ -136,7 +136,7 @@ class Student:
     @namesetter
     def name(self,name):
         if not name:
-            return ValueError("Invalid Name")
+            return ValueError("Missing Name")
         return self._name
 def main():
     student = get_student()
