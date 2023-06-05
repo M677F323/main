@@ -87,6 +87,11 @@ class Student:
                 return "🐍"
             case "lizard":
                 return "🦎"
+            case _:
+                return "🪳"
+            #or
+            else:
+                return "🦖"
 
 def main():
     student = get_student()
