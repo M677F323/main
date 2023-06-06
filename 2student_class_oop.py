@@ -141,6 +141,9 @@ class Student:
 def main():
     student = get_student()
     #student.house = "kan"
+    #student._house = "kan" unfortunately if passes even if you set setter and getter
+    #in jave only we can prevent it
+    #_ mean some thing is not important not to touch it _ _ is not at all to touch it
     print(student)
     
 def get_student():
