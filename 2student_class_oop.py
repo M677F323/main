@@ -107,7 +107,7 @@ if __name__ == "__main__":
     main()  """
 
 
-#back to normal
+""" #back to normal
 #use of getter and setter class is if you are trying to change it will pass only from the setter function and it filter it
 class Student:
     def __init__(self,name,house):
@@ -144,6 +144,31 @@ def main():
     #student._house = "kan" unfortunately if passes even if you set setter and getter
     #in jave only we can prevent it
     #_ mean some thing is not important not to touch it _ _ is not at all to touch it
+    print(student)
+    
+def get_student():
+    name = input("Name :")
+    house = input("House: ")
+    return Student(name,house)
+
+if __name__ == "__main__":
+    main() """
+
+class Student:
+    def __init__(self,name,house):
+        self.name = name
+        self.house = house
+    
+    def __str__(self,name):
+        print(f"{self.name} is from {self.house}")
+    
+    @classmethod
+    def get(cls):#creating class obj like that
+        name = input("name: ")
+        house = input("house")
+        return cls(name,house)#makkiing or instantiating class variables
+def main():
+    student = get_student()
     print(student)
     
 def get_student():
