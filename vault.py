@@ -8,3 +8,6 @@ class Vault:
         return (f"{self.galleons}galleons and {self.sickles}sickles and {self.knuts}knuts")
 potter = Vault(100,20,23)
 print(potter)
+
+wasley = Valut(200,18,34)
+print(wasley)
