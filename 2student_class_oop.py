@@ -154,13 +154,15 @@ def get_student():
 if __name__ == "__main__":
     main() """
 
+
+
 class Student:
     def __init__(self,name,house):
         self.name = name
         self.house = house
     
-    def __str__(self,name):
-        print(f"{self.name} is from {self.house}")
+    def __str__(self):
+        return f"{self.name} is from {self.house}"
     
     @classmethod
     def get(cls):#creating class obj like that
@@ -168,7 +170,7 @@ class Student:
         house = input("house")
         return cls(name,house)#makkiing or instantiating class variables
 def main():
-    student = get_student()
+    student = Student.get()
     print(student)
     
 def get_student():
