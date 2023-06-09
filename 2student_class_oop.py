@@ -167,16 +167,11 @@ class Student:
     @classmethod
     def get(cls):#creating class obj like that
         name = input("name: ")
-        house = input("house")
+        house = input("house:")
         return cls(name,house)#makkiing or instantiating class variables
 def main():
     student = Student.get()
     print(student)
-    
-def get_student():
-    name = input("Name :")
-    house = input("House: ")
-    return Student(name,house)
 
 if __name__ == "__main__":
     main()
