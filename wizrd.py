@@ -1,5 +1,4 @@
-def wizrad():
-    ...
+
 def student(self,name,house):
     if not name:
         return ValueError("Missing Name")
