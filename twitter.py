@@ -1,6 +1,6 @@
-""" url = input("URL: ").strip()
-username = url.removeprefix("https://twitter.com/")
-print(f"username:" {username}) """
+url = input("URL: ").strip()
+username = url.removeprefix("https://twitter.com/","",url)
+print(f"username: {username}")
 #removerpefix
 #replace
 #re sub
