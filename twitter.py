@@ -1,5 +1,5 @@
 url = input("URL: ").strip()
-username = url.removeprefix("https://twitter.com/", "")
+username = url.removeprefix("https://twitter.com/")
 print(f"username:" {username})
 #removerpefix
 #replace
