@@ -7,5 +7,8 @@ print(f"hello,{name}") """
 matches =re.search(r"^().+), (.+)$", name)
 if matches:
     last ,first = matches.groups()
-    name = f"{first} {last}"
+    #name = f"{first} {last}"
+    first = matches.proup(1)
+    last = matches.group(2)
+
 print(f"hello {name}")
