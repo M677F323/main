@@ -7,6 +7,7 @@ if __name__ == "__main__":
     main() """
 
 balance = 0
+#here if we assgign it as  global thats the corner case then it will be assigned as zero
 
 def main():
     deposit(100)
