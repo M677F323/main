@@ -19,7 +19,8 @@ def deposit(n):
     balance += n
 
 def withdraw(n):
-    global balance
+    global balance#This is for modifiying the global variable 
+    #without this global varibale in local we cannt update the balanace which is  outside
     balance -= n
 
 if __name__ == "__main__":
