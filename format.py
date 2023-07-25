@@ -4,4 +4,5 @@ name = input("whats your name? ").strip()
     last, first = name.split(",")
     name = f"{first}{last}"
 print(f"hello,{name}") """
-re.search(r"^.+, .+$", name)
+matches =re.search(r"^().+), (.+)$", name)
+    last ,first = matches.groups()
