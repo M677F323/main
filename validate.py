@@ -39,12 +39,34 @@ else:
 
 import re
 email = input("what's your email?").strip()
-if re.search(".*@.*",email):
+#if re.search(".*@.*",email):
     print("valid")
+#if re.search(r"^.+@.+\.edu$",email):
+if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.edu$",email,re.IGNORECASE)
 else:
     print("invalid")
 
 # * = 0 or more
 # + = 1 or more
 # *.  or + = 0 or more
-# . = loop
+#? 0 or 1
+# . = any character 
+#if re.search(r".+@.+\.edu",email):
+# \ it mean paticularly .edu
+# r raw
+#^ match the start of string
+#$ match end of string 
+#[] set of charcters
+#if re.search(r"^[@a]+@[^@]+\.edu$")
+#[^]  complementing set dont match exclude it
+#{} specific number of expression
+#\w word charcter A-Za-z0-9_
+#\d decimail 0-9
+#D  notdecimal 0-9 
+#(cor|edu|gmail)  a group
+#(?:..)
+#\s space   (\w|\s)
+#flags configurations
+#re.IGNORECASE ignore case accepr any case
+#re.MULTILINE
+#re.DOTALL
