@@ -11,6 +11,7 @@ for student in students:
         houses.append(student["house"])
 houses.sort()
 print(houses) """
+#***set()***
 #it automatically sort and remove duplicates
 houses = set()
 for student in students:
