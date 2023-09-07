@@ -15,4 +15,4 @@ print(houses) """
 houses = set()
 for student in students:
     houses.add(student["house"])
-
+print(houses)
