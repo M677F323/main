@@ -7,9 +7,10 @@ name = input("whats your name: ")
 
 #concatanating name to string
 print("Hello," + name) 
-
-#string in python is str
-#*objecst mean any no of strings we can take
-#sep='', default seperate by the single space
-#end='\n' its default
+"""
+string in python is str
+*objecst mean any no of strings we can take
+sep='', default seperate by the single space
+end='\n' its default
 print(*objetcs, sep='', end='\n', file=sys.stdout, flush =False)
+"""
