@@ -8,4 +8,4 @@ elif x >y:
 elif x == y:
     print("x is equal to y")
 else:
-    print("Not valid")
+    print(" Not valid")
