@@ -20,7 +20,7 @@ print (i + l) # it represents 12 because it concatenate as string
 #use tab to auto complete statement
 
 #another way  hardest way but its possible
-print(int(input("whats the value of x? ")))+(int(input("whats the value of y? ")))
+print((int(input("whats the value of x? "))) + (int(input("whats the value of y? "))))
 
 #float
 x = float(input("whats the value of x? "))
@@ -32,4 +32,6 @@ print(x+y)
 #using round function
 z = round(x+y)
 
-print(f'{z:,}') #x=999 and y=1 o/p: 1,0007
+print(f'{z:,}') #x=999 and y=1 o/p: 1,000
+
+
