@@ -20,4 +20,12 @@ def is_even(n):
     else:
         return False
 
+
+#2def is_even(n):
+#    return True if n%2 ==0 else False
+
+#3super
+#def is_even(n):
+#    return n % 2 == 0
+
 main()
