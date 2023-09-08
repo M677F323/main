@@ -20,7 +20,7 @@ print (i + l) # it represents 12 because it concatenate as string
 #use tab to auto complete statement
 
 #another way  hardest way but its possible
-print(int(input("whats the value of x? "))) + (int(input("whats the value of y? "))))
+print((int(input("whats the value of x? "))) + (int(input("whats the value of y? "))))
 
 #float
 x = float(input("whats the value of x? "))
