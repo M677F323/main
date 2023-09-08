@@ -12,10 +12,10 @@ y = input("whats the value of y?")
 print (x + y) # it represents 12 because it concatenate as string
 
 #another way
-x = int(input("whats the value of x? "))
-y = int(input("whats the value of y? "))
+i = int(input("whats the value of x? "))
+l = int(input("whats the value of y? "))
 
-print (x + y) # it represents 12 because it concatenate as string
+print (i + l) # it represents 12 because it concatenate as string
 
 #use tab to auto complete statement
 
@@ -27,3 +27,9 @@ x = float(input("whats the value of x? "))
 y = float(input("whats the value of y? "))
 
 print(x+y)
+
+#round(number[, ndigits]) using round method in documentation
+#using round function
+z = round(x+y)
+
+print(f'{z:,}') #x=999 and y=1 o/p: 1,0007
