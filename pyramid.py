@@ -19,3 +19,6 @@ def pyramid(n):
 
 if __name__ == "__main__":
     main()
+
+""" shitft+alt+a 
+to multi comment by selecting """
