@@ -9,8 +9,8 @@ def pyramid(n):
 main() """
 
 def main():
-    x = int(input("Enter the value of X "))
-    pyramid(x)
+    Height = int(input("Enter the value of X "))
+    pyramid(Height)
 
 def pyramid(n):
     for i in range(n):
