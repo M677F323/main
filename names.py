@@ -22,7 +22,10 @@ file.write(f"{name}\n")
 file.close()
  """
 #with will write open and close for us
+names= []
 
-name = input("whats your name? ")
-with open("names.txt","a") as file:
-    file.write(f"{name}\n")
+with open("names.txt") as file:
+   for line in file:
+        names.append(line.rstrip())
+for name in sorted(names)
+    print(f"hello,{name}")
