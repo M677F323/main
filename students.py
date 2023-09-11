@@ -17,19 +17,13 @@ with open("students.csv") as file:
      #sorted according to line
     #for line in sorted(file):
     for line in file:
-        name,house = line.rstrip().split(",")
-        print(f"{name} is in {house}")
-        #creating empty dictionary
-        """student = {}
-        student["name"] =name
-        student["house"]=house"""
-
+        name, house = line.rstrip().split(",")
         student = {"name": name, "house": house}
         students.append(student)
 #sort according to studnets name
-def get_name():
-    return students["name"]
-def get_house():
-    return students["house"]
+def get_name(student):
+    return student["name"]
+def get_house(student):
+    return student["house"]
 for student in sorted(students, key = get_name):
     print(f"{student['name']} is in {student['house']}")
