@@ -10,4 +10,4 @@ with open("students2.csv","a") as file:
 with open("students2.csv","a") as file:
     writer = csv.DictWriter(file,fieldname =["name","home"])
     #writer function take file argument
-    writer.writerow({"name": name,"home":home})
+    writer.writerow(["name"== name,"home" == home])
