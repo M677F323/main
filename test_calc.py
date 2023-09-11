@@ -33,7 +33,8 @@ if __name__ == "__main__":
     try:
         assert square(0) == 0
     except AssertionError:
-        print("0 square is not 0")  
+        print("0 square is not 0") 
+#call main 
 #this is why pytest case so we no ndded to use these many line to test multiple lines
 #unit test are tests for function that  you have written 
 
