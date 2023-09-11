@@ -21,7 +21,14 @@ with open("names.txt") as file:
 for name in sorted(names):
     print(f'Hello, {name}') """
 
-#reading and sorting direct file  as both at a time
+""" #reading and sorting direct file  as both at a time
 with open("names.txt") as file:
     for line in sorted(file):
         print(f'hello,{line}')
+ """
+
+with open("names.txt") as file:
+   for line in file:
+        names.append(line.rstrip())
+for name in sorted(names):
+    print(f"hello,{name}")
