@@ -98,3 +98,8 @@ test_calc.py ...                                                                
 
 ============================================= 3 passed in 0.02s ==============================================
 '''
+#this is to if we remove int() in calc they if user pass sting that leads to type error. so by using this we can display to the user
+import pytest
+def test_str()
+    with pytest.raises(TypeError):
+        square(cat)
