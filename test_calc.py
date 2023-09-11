@@ -76,3 +76,24 @@ FAILED test_calc.py::test_square - assert 6 == 9
 ============================================= 1 failed in 0.09s =============================================='''
 
 #check50 is like pytest by harvard
+#this code will run all code previously whe it get error its not running other tests
+from calc import square
+def test_square():
+    assert square(2) == 4
+    assert square(3) == 9
+def test_nagative():
+    assert square(-2)  ==4
+    assert square(-3)  == 9
+def test_zero():
+    assert square(0)  == 0
+'''(base) veerasekhar@veeras-MacBook-Pro python_harvardx_cert % pytest test_calc.py
+============================================ test session starts =============================================
+platform darwin -- Python 3.11.4, pytest-7.4.0, pluggy-1.0.0
+rootdir: /Users/veerasekhar/Desktop/cs50/python_harvardx_cert
+plugins: anyio-3.5.0
+collected 3 items                                                                                            
+
+test_calc.py ...                                                                                       [100%]
+
+============================================= 3 passed in 0.02s ==============================================
+'''
