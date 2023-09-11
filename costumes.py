@@ -11,3 +11,4 @@ for arg in sys.argv[1:]:
 images[0].save(
     "costume.gif",save_all = true, append_images=[images[1]],duration =200, loop =0
 )
+#python costumes.py g
