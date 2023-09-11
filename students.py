@@ -30,7 +30,7 @@ for student in sorted(students, key = get_name): '''
 for student in sorted(students, key = lambda student :student["name"]):
     print(f"{student['name']} is in {student['house']}") """
 
-#if we have multiple commas in the file
+""" #if we have multiple commas in the file
 import csv
 students = []
 with open("students.csv") as file:
@@ -41,7 +41,7 @@ with open("students.csv") as file:
 
 #by using lambda ananymous
 for student in sorted(students, key = lambda student :student["name"]):
-    print(f"{student['name']} is in {student['house']}")
+    print(f"{student['name']} is in {student['house']}") """
 
 #Another method
 """import csv
@@ -60,3 +60,5 @@ with open("students.csv") as file:
 for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['home']}")
 """
+
+
