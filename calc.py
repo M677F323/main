@@ -5,4 +5,6 @@ def main():
 def sqaure(n):
     return n * n
 
-main()
+#main()
+if __name__ == "__main__":
+    main()
