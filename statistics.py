@@ -1,4 +1,2 @@
-
 import statistics
-
-statistics.mean([99,80])
+statistics.mean([60,80])
