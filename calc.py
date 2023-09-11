@@ -6,6 +6,7 @@ def square(n):
     return n * n
 
 #3 sqaure is not 9 n+n
+#if we use assert  the for this  we get assertion error
 
 #main()
 if __name__ == "__main__":
