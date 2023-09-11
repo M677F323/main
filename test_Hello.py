@@ -20,3 +20,4 @@ test_Hello.py ..                                                                
 
 ============================================= 2 passed in 0.01s ==============================================
 '''
+#if we write them in loops again we need tests for test that will be complicatedcode
