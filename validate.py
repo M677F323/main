@@ -16,6 +16,7 @@ else:
     print("invalid")
 
 #re regular expresions library
+#re.search(pattern, sting, flags =0)
 
 """ if len(sys.argv) > 1:
     email = sys.argv[1]
