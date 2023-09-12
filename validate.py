@@ -47,3 +47,4 @@ else:
 # * = 0 or more
 # + = 1 or more
 # *.  or + = 0 or more
+# . = loop
