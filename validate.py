@@ -1,19 +1,19 @@
 #valiadting  email
 import sys
 import csv
-email = input("Enter the email? ").strip()
+""" email = input("Enter the email? ").strip() """
 """ 
 if  "@" in email and "." in email:
     print("valid")
 else:
     print("invalid") """
 
-username, domain = email.split("@")
+""" username, domain = email.split("@")
 #if username and "." in domain:
 if username and domain.endswith(".edu"):
     print("valid")
 else:
-    print("invalid")
+    print("invalid") """
 
 #re regular expresions library
 #re.search(pattern, sting, flags =0)
@@ -25,7 +25,7 @@ else:
         writer.writerow([email]) 
  """
 
-import sys
+""" import sys
 import csv
 
 if len(sys.argv) > 1:
@@ -34,4 +34,16 @@ if len(sys.argv) > 1:
         writer = csv.writer(file)
         writer.writerow([email])
 else:
-    print("Usage: python validate.py <email>")
+    print("Usage: python validate.py <email>") """
+
+
+import re
+email = input("what's your email?").strip()
+if re.search(".+@.+",email):
+    print("valid")
+else:
+    print("invalid")
+
+# * = 0 or more
+# + = 1 or more
+# *.  or + = 0 or more
