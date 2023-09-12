@@ -15,6 +15,8 @@ if username and domain.endswith(".edu"):
 else:
     print("invalid")
 
+#re regular expresions library
+
 """ if len(sys.argv) > 1:
     email = sys.argv[1]
     with open("email.txt","a",newline="") as file:
