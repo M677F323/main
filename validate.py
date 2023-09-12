@@ -15,13 +15,14 @@ if username and domain.endswith(".edu"):
 else:
     print("invalid")
 
-if len(sys.argv) > 1:
+""" if len(sys.argv) > 1:
     email = sys.argv[1]
     with open("email.txt","a",newline="") as file:
         writer = csv.writer(file)
         writer.writerow([email]) 
+ """
 
-""" import sys
+import sys
 import csv
 
 if len(sys.argv) > 1:
@@ -30,4 +31,4 @@ if len(sys.argv) > 1:
         writer = csv.writer(file)
         writer.writerow([email])
 else:
-    print("Usage: python validate.py <email>") """
+    print("Usage: python validate.py <email>")
