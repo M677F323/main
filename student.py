@@ -57,7 +57,7 @@ def get_student():
 if __name__ == "__main__":
     main() """
 
-def main():
+""" def main():
     student = get_student()
     if student[0] == "veera":
         student[1] = "vijayawada"
@@ -67,4 +67,15 @@ def get_student():
     house = input("house: ")
     return [name,house]
 if __name__ == "__main__":
-    main()
+    main() """
+
+def main():
+    student = get_student()
+    print(f"{student['name']} from {student['house']}")
+def get_student():
+    student= {}
+    student["name"] = input("Name: ")
+    student["house"] = input("house: ")
+    return student
+if __name__ == "__main__":
+    main() 
