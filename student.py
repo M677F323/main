@@ -13,10 +13,20 @@ def get_house():
 if __name__ == "__main__":
     main() """
 
-def main():
+""" def main():
     name,house = get_student()
 
     print(f"{name} from {house}")
+def get_student():
+    name = input("Name: ")
+    house = input("house: ")
+    return name,house
+if __name__ == "__main__":
+    main() """
+
+def main():
+    student = get_student()
+    print(f"{student[0]} from {student[1]}")
 def get_student():
     name = input("Name: ")
     house = input("house: ")
