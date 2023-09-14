@@ -6,7 +6,7 @@ class Vault:
     
     def __str__(self):
         return (f"{self.galleons}galleons and {self.sickles}sickles and {self.knuts}knuts")
-
+#join two lists 
     def __add__(self,other):
         galleons = self.galleons+other.galleons
         sickles = self.sickles+other.sickles
