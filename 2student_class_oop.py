@@ -65,7 +65,7 @@ def get_student():
 if __name__ == "__main__":
     main()  """  
 
-
+""" #adding patronus
 class Student:
     def __init__(self,name,house,patronus):
         if not name:
@@ -104,4 +104,26 @@ def get_student():
     patronus = input("patronus: ")
     return Student(name,house,patronus)
 if __name__ == "__main__":
-    main() 
+    main()  """
+
+
+#back to normal
+class Student:
+    def __init__(self,name,house,phn=None):
+        if not name:
+            raise ValueError("Missing Name")
+        if house not in ["guntur","vijaywada","banglore","Texas"]:
+            raise ValueError("Invalid House")
+        self.name = name
+        self.house = house
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+def main():
+    student = get_student()
+    print(student)
+def get_student():
+    name = input("Name :")
+    house = input("House: ")
+    return Student(name,house)
+if __name__ == "__main__":
+    main()
